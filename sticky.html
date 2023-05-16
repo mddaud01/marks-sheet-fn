@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sticky</title>
+    <style>
+        .container {
+            margin-left: auto;
+            margin-right: auto;
+            width: 1000px;
+        }
+        .box {
+            height: 500px;
+            border-radius: 10px;
+            
+        }
+        .box2 {
+            height: 50px;
+            background-color: aquamarine;
+        }
+        .box3 {
+            background-color: antiquewhite;
+        }
+        .box1 {
+            background-color: blueviolet;
+        }
+        .box4 {
+            background-color: brown;
+        }
+        .sticky {
+            position: sticky;
+            top: 20px;
+        }
+        .box1, .box2, .box3, .box4{
+            font-size: 30px;
+        }
+      
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- <div class="box box1">Box1</div>
+        <div class="box2 sticky">Box2</div>
+        <div class="box box3">Box3</div>
+        <div class="box box4">Box3 </div> -->
+      
+        <input type="button" name ="click" value="click" onclick="sum('Daud','rips','134me 129344', 34,32,34,12, 10)"/>
+
+        <div class="name">name : <span id="name">  </span> </div>
+        <div class="college">college :<span id="college">  </span><span></span> </div>
+        <div class="enroll">enrolment  :<span id="enroll">  </span> </div>
+        <div class="marks">marks :<span id="marks"></span> </div>
+    </div>
+
+    <script>
+        // let firstName = "Md"
+        // let lastName = "Daud"
+
+        // make a function for full name 
+
+    //     let fullName = (firstName, lastName)=>`${firstName} ${lastName}`
+
+    //    const FullName =`hello ${fullName(firstName,lastName)} `
+
+    //     console.log(FullName);
+
+    // let fullName = (firstName,lastName)=>{
+    //     return `${firstName} ${lastName}`
+    // }
+    //  const FullName = fullName(firstName,lastName)
+
+    //  console.log(FullName)
+
+// seccond exersise
+
+// let welcome = (name)=>`${name}`
+
+// console.log ( ` welcome ${welcome("Daud")}`) 
+
+// let details = (name, age )=> `${name}  ${age}`
+
+// console.log(details("mdDaud" , 23));
+
+
+
+
+// function greeting (user){
+
+// return 'hello'+' '+user +" "+ 'good Morning';
+
+// }
+// console.log(greeting('mohammad'));
+
+// function greeting (user ,marks){
+
+// let student =  ` hello ${user} good morning  your marks is ${marks}`;
+// console.log(student)
+ 
+
+
+// }
+// greeting('mohammad' , 344 )
+// console.log(greeting('mohammad', 355));
+
+// let studentGreet = greeting('mahammad',455 )
+// console.log(studentGreet)
+
+// let greeting = (user , marks)=> ` hello ${user} good morning  your marks is ${marks}`;
+// console.log(greeting("mohammad" , 233));
+
+//   function math (n1,n2){
+//    let add = n1+n2;
+//    let sub = n1-n2;
+//    let mul = n1 *n2 ;
+//     let divi = n1/n2 ;
+
+//     console.log(sub);
+//     console.log(mul);
+//     console.log(divi);
+//   }
+//   math(20,30)
+
+// function math() {
+//     let sum = 0 ;
+//     for (let i in arguments){
+//         sum += arguments[i];
+//     }
+//     console.log(sum);
+// }
+// math(20, 30 , 40 , 60 , 80) 
+
+// function math (){
+//     let sum = 0;
+//      for (let i in arguments){
+//         sum+=arguments[i];
+//      }
+//      console.log(sum)
+
+// }
+// math(12,23,34,45,456,67)
+
+// let math = () => {
+//     let sum = 0 ;
+//     for(let i in arguments){
+//         sum +=arguments[i];
+
+//     }
+//     console.log(sum)
+
+// }
+// math(20, 30,40)
+
+let Name = document.getElementById("name")
+let College = document.getElementById("college")
+let Enroll = document.getElementById("enroll")
+let Marks = document.getElementById("marks")
+ 
+
+
+
+
+function sum ( name ,college,enroNo, ...marks){
+    let sum = 0;
+    for (let i in marks){
+        sum += marks[i];
+    }
+
+    // console.log(name)
+   Name.innerHTML= name;
+    // console.log(college )
+    College.innerHTML=college;
+
+    // console.log( enroNo)
+    Enroll.innerHTML=enroNo;
+
+    // console.log(`marks ${sum}`)
+    Marks.innerHTML=sum;
+
+
+
+ 
+  
+
+}
+
+
+
+
+    </script>
+</body>
+</html>
